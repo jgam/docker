@@ -2,8 +2,6 @@ version: '3'
 
 services:
   react:
-    image: react
     build:
+      context: .
       dockerfile: ./Dockerfile.dev
-    command:
-        - npm start
